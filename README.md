@@ -46,7 +46,7 @@ Here is the Flow Diagram showing how the overall system work:
 ### Technical Stack
 * **Orchestration:** LangGraph
 * **LLMs:** * **Llama 3.1 8B (Groq):** Powers the Expert Agents for high-speed, persona-strict analysis.
-    * **Gemini 1.5 Flash / Pro (Google):** Powers the Supervisor for deep synthesis and massive context handling.
+    * **Gemini 2.5 Flash (Google):** Powers the Supervisor for deep synthesis and massive context handling.
 * **Vector Database:** FAISS (Facebook AI Similarity Search)
 * **Embeddings:** HuggingFace (`all-MiniLM-L6-v2`)
 * **Memory:** Chat History Database for persistent sessions.
