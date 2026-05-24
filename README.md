@@ -26,7 +26,7 @@ Here is the Flow Diagram showing how the overall system work:
 
 3.  **Synthesizer (The Supervisor):** A central node that receives the expert analyses and raw book context to craft a unified advice draft. It also has its own *RAG TOOL* to find any needed information from the three books.
 
-4.  **Self-Reflection Loop:** The Supervisor has an iterative Actor-Critic self-reflection loop based on ![this paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/91edff07232fb1b55a505a9e9f6c0ff3-Paper-Conference.pdf):
+4.  **Self-Reflection Loop:** The Supervisor has an iterative Actor-Critic self-reflection loop based on [this paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/91edff07232fb1b55a505a9e9f6c0ff3-Paper-Conference.pdf):
   
 **The Drafter (Actor):** Ingests the initial user prompt, parallel agent analyses, and raw book passages to construct a cohesive, single-voiced advice plan. If previous iterations failed validation, it accepts a structured critique_history parameter to explicitly target and fix its past structural or tonal errors.
 
