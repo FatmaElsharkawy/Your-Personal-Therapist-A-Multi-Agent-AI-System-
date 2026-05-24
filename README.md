@@ -28,9 +28,9 @@ Here is the Flow Diagram showing how the overall system work:
 
 4.  **Self-Reflection Loop:** The Supervisor has an iterative Actor-Critic self-reflection loop based on [this paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/91edff07232fb1b55a505a9e9f6c0ff3-Paper-Conference.pdf):
   
-**The Drafter (Actor):** Ingests the initial user prompt, parallel agent analyses, and raw book passages to construct a cohesive, single-voiced advice plan. If previous iterations failed validation, it accepts a structured critique_history parameter to explicitly target and fix its past structural or tonal errors.
+* **The Drafter (Actor):** Ingests the initial user prompt, parallel agent analyses, and raw book passages to construct a cohesive, single-voiced advice plan. If previous iterations failed validation, it accepts a structured critique_history parameter to explicitly target and fix its past structural or tonal errors.
 
-**The Evaluator (Critic):** Evaluates the draft in isolation using a strict programmatic verification step. It reviews the synthesis against five criteria (Relevance, Groundedness, Integration, Actionability, and Tone Variation) and outputs its assessment (True or False) as a JSON.
+* **The Evaluator (Critic):** Evaluates the draft in isolation using a strict programmatic verification step. It reviews the synthesis against five criteria (Relevance, Groundedness, Integration, Actionability, and Tone Variation) and outputs its assessment (True or False) as a JSON.
 
 If any verification parameter returns false, the graph increments the reflection_count, updates the global state with structured Feedback_Notes, and automatically routes control back to the Drafter. The loop runs recursively until all validation criteria evaluate to true or the execution hits MAX_REFLECTIONS.
 
