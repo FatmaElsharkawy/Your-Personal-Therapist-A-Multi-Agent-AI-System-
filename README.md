@@ -50,10 +50,14 @@ Here is the Flow Diagram showing how the overall system work:
     * **Gemini 2.5 Flash (Google):** Powers the Supervisor for deep synthesis and massive context handling.
 * **Vector Database:** FAISS (Facebook AI Similarity Search)
 * **Embeddings:** HuggingFace (`all-MiniLM-L6-v2`)
-* **Memory:** Chat History Database for persistent sessions.
+* **Memory:** SQLite database saved to Google Drive for persistent chat history across sessions.
+---
+### Demo 
+<img width="835" height="835" alt="image" src="https://github.com/user-attachments/assets/fa681f5e-bdb9-490a-9cc1-723dea912afa" />
+<img width="834" height="627" alt="image" src="https://github.com/user-attachments/assets/cfc439a5-765c-473b-984e-fc259b91124b" />
+
 
 ---
-
 
 ## 👥 Collaborators
 * **Judy Essam**
